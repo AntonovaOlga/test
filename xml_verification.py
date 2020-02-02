@@ -61,11 +61,3 @@ def xml_processing(xml_file: str, xsd_file: str, xslt_file: str, output_file: st
     except OSError:
         logging.exception('file missing')
 
-
-if __name__ == '__main__':
-    xml_file_path = 'ertyh'
-    xsd_file_path = 'files/test2.xsd'
-    xslt_file_path = 'files/test2.xsl'
-    output_xml = 'files/output2.xml'
-
-    xml_processing(xml_file_path, xsd_file_path, xslt_file_path, output_xml)
